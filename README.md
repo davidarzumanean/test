@@ -1,3 +1,6 @@
+## The main task is deployed on
+https://test-pro-2021.web.app/
+
 ### Main task
 For this task 2 external packages are used.
 1. Mirage.js to mock api.
