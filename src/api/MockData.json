@@ -1,0 +1,22 @@
+[
+  {
+    "id": "megafon",
+    "name": "Megafon",
+    "logoUrl": "https://moscow.megafon.ru/public/891d74229788be0a7112b49516ff2657.svg"
+  },
+  {
+    "id": "mts",
+    "name": "MTS",
+    "logoUrl": "https://static.ssl.mts.ru/mts_rf/images/MTS_Logo_eng_r.png?_ga=2.210985885.940374168.1610288824-1216281602.1610288824&_gl=1*1i9a562*_ga*MTIxNjI4MTYwMi4xNjEwMjg4ODI0*_ga_DJC0PYZJHN*MTYxMDI5NDIwOS4yLjEuMTYxMDI5NDIyOC40MQ.."
+  },
+  {
+    "id": "beeline",
+    "name": "Beeline",
+    "logoUrl": "https://static.beeline.ru/upload/images/b2c/bee-logo/robot.png"
+  },
+  {
+    "id": "ucom",
+    "name": "Ucom",
+    "logoUrl": "https://shop.ucom.am/static/version1609315404/frontend/Magento/ucom/hy_AM/images/main_logo.png"
+  }
+]

@@ -1,0 +1,62 @@
+$font: 'Roboto', sans-serif;
+$mainColor: #16056B;
+$secondaryColor: #FD9519;
+$errorColor: #f00;
+$lightColor: #fff;
+
+@function rem($size) {
+  $remSize: $size / 19;
+  @return #{$remSize}rem;
+}
+
+:root {
+  --containerWidth: 1260px;
+  @media screen and (max-width: 768px) {
+    --containerWidth: 750px;
+  }
+}
+
+html {
+  font: 300 19px/1.31578947368 $font;
+  user-select: auto;
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: rgba(255, 255, 255, 0.15) #1c1b1b;
+  scrollbar-width: thin;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 1392px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 1125px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1050px) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 775px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 19px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 14px;
+  }
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+
+  * {
+    box-sizing: border-box
+  }
+}

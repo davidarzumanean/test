@@ -1,0 +1,65 @@
+@import "global.scss";
+
+.app-wrapper {
+  header {
+    max-width: var(--containerWidth);
+    margin: 0 auto;
+    padding: rem(20) rem(10);
+    .logo-container {
+      .logo {
+        margin-right: rem(10);
+        &:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          height: rem(25);
+          width: rem(7);
+          border-left: rem(5) solid $secondaryColor;
+          box-sizing: border-box
+        }
+        &:after {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: rem(25);
+          height: rem(8);
+          border: rem(5) solid $mainColor;
+          border-radius: rem(10);
+          position: relative;
+          top: rem(-5);
+        }
+      }
+      a {
+        color: $mainColor;
+        text-decoration: none;
+        font-size: rem(25);
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        outline: none;
+      }
+    }
+  }
+
+  .main-title {
+    font-size: rem(26);
+    margin-top: 0;
+    color: $mainColor;
+  }
+
+  .content-wrapper {
+    max-width: var(--containerWidth);
+    padding: rem(20) rem(10);
+    margin: 0 auto;
+  }
+
+  .error {
+    color: $errorColor;
+    font-size: rem(12);
+  }
+
+  .disabled {
+    opacity: .7;
+    pointer-events: none;
+  }
+}

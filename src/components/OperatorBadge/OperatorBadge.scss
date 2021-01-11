@@ -1,0 +1,28 @@
+@import "src/assets/styles/global.scss";
+
+.operator-badge {
+  display: block;
+  max-width: rem(450);
+  min-width: rem(200);
+  padding: rem(15) rem(20);
+  border-radius: rem(20);
+  border: rem(1) solid $mainColor;
+  cursor: pointer;
+  transition: box-shadow .2s ease 0s;
+  outline: none;
+  color: $mainColor;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .operator-logo {
+    max-width: 100%;
+    height: rem(50);
+    margin-bottom: rem(15);
+  }
+  .operator-name {
+    font-size: rem(22);
+  }
+}
