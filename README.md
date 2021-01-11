@@ -1,3 +1,10 @@
+### Main task
+For this task 2 external packages are used.
+1. Mirage.js to mock api.
+2. react-number-format for easier number formatting.
+
+### Code refactoring task.
+
 ```function func(s = '', a, b) {
   if (!isString(s) || !s.length) {
     return -1;
