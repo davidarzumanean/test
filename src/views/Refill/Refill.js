@@ -12,6 +12,7 @@ function Refill() {
   const { operators, dispatch } = useContext(OperatorContext);
   const [ phone, setPhone ] = useState('');
   const [ amount, setAmount ] = useState('');
+  const [ cardNumber, setCardNumber ] = useState('');
   const [ error, setError ] = useState('');
   const [ isValidForm, setIsValidForm ] = useState(false);
 
@@ -31,9 +32,9 @@ function Refill() {
   }, []);
 
   useEffect(() => {
-    if (phone.length < 18 || !amount) setIsValidForm(false);
+    if (phone?.length < 18 || !amount || cardNumber?.length < 19) setIsValidForm(false);
     else setIsValidForm(true);
-  }, [phone, amount])
+  }, [phone, amount, cardNumber])
 
   const validateAmount = (values) => {
     if (values.floatValue > 1000) {
@@ -51,6 +52,7 @@ function Refill() {
       params: {
         phone,
         amount,
+        cardNumber,
       },
     });
 
@@ -91,6 +93,14 @@ function Refill() {
             allowLeadingZeros={false}
             onValueChange={validateAmount}
             prefix="₽" />
+
+          <label>Card Number</label>
+          <NumberFormat
+            className="input-box"
+            value={cardNumber}
+            onChange={e => setCardNumber(e.target.value)}
+            mask=""
+            format="#### #### #### ####" />
 
           <button
             className={`submit ${!isValidForm ? 'disabled' : ''}`}
