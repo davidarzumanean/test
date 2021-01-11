@@ -5,7 +5,8 @@ For this task 2 external packages are used.
 
 ### Code refactoring task.
 
-```function func(s = '', a, b) {
+```
+function func(s = '', a, b) {
   if (!isString(s) || !s.length) {
     return -1;
   }
