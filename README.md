@@ -1,4 +1,4 @@
-function func(s = '', a, b) {
+```function func(s = '', a, b) {
   if (!isString(s) || !s.length) {
     return -1;
   }
@@ -16,3 +16,4 @@ function getCharIndex(str, char) {
 function isString(s) {
   return s && typeof s === 'string';
 }
+```
